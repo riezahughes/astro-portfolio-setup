@@ -17,5 +17,6 @@
     "importsNotUsedAsValues": "error",
     "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx"
-  }
+  },
+  "include": ["./jest-setup.ts"]
 }
