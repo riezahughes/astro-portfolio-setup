@@ -6,5 +6,8 @@ module.exports = {
 	collectCoverage: true,
 	coverageDirectory: "coverage",
 	coverageProvider: "v8",
-	setupFilesAfterEnv: ["./jest.setup.ts"]
+	setupFilesAfterEnv: ["./jest.setup.ts"],
+	transform: {
+		".+\\.(css|styl|less|sass|scss)$": "jest-css-modules-transform"
+	}
 };

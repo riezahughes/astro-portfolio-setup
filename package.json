@@ -58,8 +58,6 @@
     "vite": "^3.0.0"
   },
   "dependencies": {
-    "@emotion/css": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "preact": "^10.5.14",
     "preact-render-to-string": "^5.1.19"
