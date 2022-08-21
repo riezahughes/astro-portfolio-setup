@@ -1,3 +1,19 @@
+# New Astro Portfolio
+
+Test at a new portfolio site using just ASTRO and a few tools i've learned. This directory will be a template for anything i might want to work on in the future. If anyone wants to ask about anything, feel free. I'll be having fun switching from Gatsby to something that's much more dynamic in tooling.
+
+A few key features this will have:
+
+- The ability to deploy using a headerless CMS.
+- Entire site's html and css will be under 1MB in size
+- The entire frontend needs to be less black and white.
+- The CV page really needs to make my skills stand out.
+- Some page animations in places.
+
+Whether i manage to get to this point or not is a different story. But it's all about the fun of playing with new toys for me. Wish me luck!
+
+--------------astro default garbage i'll be keeping here for now.
+
 # Welcome to [Astro](https://astro.build)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
