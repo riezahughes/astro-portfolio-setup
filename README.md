@@ -2,13 +2,22 @@
 
 Test at a new portfolio site using just ASTRO and a few tools i've learned. This directory will be a template for anything i might want to work on in the future. If anyone wants to ask about anything, feel free. I'll be having fun switching from Gatsby to something that's much more dynamic in tooling.
 
-A few key features this will have:
+A few key features this website will have:
 
 - The ability to deploy using a headerless CMS.
-- Entire site's html and css will be under 1MB in size
+- Entire site's html and css will be under 1MB in size (to show an "edge" example.)
 - The entire frontend needs to be less black and white.
 - The CV page really needs to make my skills stand out.
 - Some page animations in places.
+
+A few key features of this repo:
+
+- Husky Pre commits
+- ts-jest configuration
+- github action runners for all tests
+- eslint and prettier support
+
+There'll be more than just this. For example, a plan to build using emotion and storybook is one of the big things i want to do. For now i'll keep the list simple.
 
 Whether i manage to get to this point or not is a different story. But it's all about the fun of playing with new toys for me. Wish me luck!
 
