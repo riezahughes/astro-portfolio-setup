@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  test-ci-pipeline:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
