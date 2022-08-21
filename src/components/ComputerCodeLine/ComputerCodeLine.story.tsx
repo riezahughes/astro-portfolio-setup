@@ -1,7 +1,7 @@
 import ComputerCodeLine from "./ComputerCodeLine";
 
 const ComputerCodeLineStory = () => {
-	return <ComputerCodeLine />;
+	return <ComputerCodeLine words="This is just a simple example" />;
 };
 
 export default ComputerCodeLineStory;

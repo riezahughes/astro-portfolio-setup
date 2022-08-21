@@ -16,6 +16,7 @@ A few key features of this repo:
 - ts-jest configuration
 - github action runners for all tests
 - eslint and prettier support
+- [vitebook](https://vitebook.dev/) added to the project to try out something that's lighter/different than storybook.
 
 There'll be more than just this. For example, a plan to build using emotion and storybook is one of the big things i want to do. For now i'll keep the list simple.
 
