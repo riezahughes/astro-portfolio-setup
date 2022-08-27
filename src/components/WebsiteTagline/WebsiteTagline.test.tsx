@@ -1,5 +1,5 @@
 import React from "react";
-import { render, waitFor } from "@testing-library/react";
+import { getByText, render, waitFor } from "@testing-library/react";
 import WebsiteTagline from "./WebsiteTagline";
 
 describe("Using module: WebsiteTagline", () => {
@@ -20,8 +20,7 @@ describe("Using module: WebsiteTagline", () => {
 	});
 
 	it("Can change it's state every 3 seconds to the next choice", async () => {
-		const { getByRole } = render(<WebsiteTagline />);
-		expect(getByRole("heading", { level: 1 })).toBeInTheDocument();
-		await waitFor(() => expect(getByRole("heading", { level: 1 })).toHaveTextContent("news"));
+		const { getByText } = render(<WebsiteTagline delay={1000} />);
+		await waitFor(() => expect(getByText("news")).toBeInTheDocument(), { timeout: 1500 });
 	});
 });
