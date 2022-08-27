@@ -1,19 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import useInterval from "../../hooks/useInterval/useInterval";
 import type { IWebsiteTagline } from "./types";
 import Styles from "./styles.module.css";
 
-export default function WebsiteTagline({ start = "google.com", choices = ["images", "news"] }: IWebsiteTagline) {
+const WebsiteTagline = ({ start = "google.com", choices = ["images", "news"] }: IWebsiteTagline) => {
 	const [choiceCount, setChoiceCount] = useState(0);
 	const changeLink = () => {
-		choices.length > choiceCount + 1 ? setChoiceCount(choiceCount + 1) : setChoiceCount(0);
+		choiceCount >= choices.length - 1 ? setChoiceCount(0) : setChoiceCount(choiceCount + 1);
 	};
 
-	useEffect(() => {
-		setInterval(() => {
-			console.log("Preso Changeo!");
-			changeLink();
-		}, 5000);
-	}, []);
+	useInterval(() => {
+		changeLink();
+	}, 5000);
 
 	return (
 		<>
@@ -22,4 +20,6 @@ export default function WebsiteTagline({ start = "google.com", choices = ["image
 			</h1>
 		</>
 	);
-}
+};
+
+export default WebsiteTagline;
