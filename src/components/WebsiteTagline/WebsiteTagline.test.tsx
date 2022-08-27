@@ -1,5 +1,5 @@
 import React from "react";
-import { getByText, render, waitFor } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import WebsiteTagline from "./WebsiteTagline";
 
 describe("Using module: WebsiteTagline", () => {
