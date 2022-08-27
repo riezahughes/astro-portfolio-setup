@@ -8,7 +8,7 @@ import WebsiteTagline from '../components/WebsiteTagline/WebsiteTagline';
 	<main>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
 		<!-- <ComputerCodeLine user="me@me" path="/astro/" words="npm run dev" /> -->
-		<WebsiteTagline start="danielruxton.dev" choices={["astro", "react", "nodejs", "contact", "cv"]} />
+		<WebsiteTagline start="danielruxton.dev" choices={["astro", "react", "nodejs", "contact", "cv"]} delay={1000} client:load/>
 		<p class="instructions">
 			Check out the <code>src/pages</code> directory to get started.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.

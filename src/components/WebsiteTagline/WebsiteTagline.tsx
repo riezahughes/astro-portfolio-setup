@@ -10,6 +10,7 @@ const WebsiteTagline = ({ start = "google.com", choices = ["images", "news"], de
 	};
 
 	useInterval(() => {
+		console.log("Firing Mah LAzor BWAHHH");
 		changeLink();
 	}, delay);
 
