@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.arrow{
+    width: 200px;
+    height: 200px;
+}
+
+.container{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: -28%;
+    top: -100%;
+}
+
+.svgText{
+    font-weight: bold;
+    font-size: 5em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-family: 'Indie Flower', cursive;
+    width: 100px;
+    height: auto;
+}
+
+.svgComponent{
+    animation: pointer 3s infinite
+}
+
+small {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@keyframes pointer {
+    50% {
+        transform: rotate(10deg);
+    }
+}
