@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import type { IMainNavigation } from "./types";
 import Styles from "./styles.module.css";
-import Pointer from "../Pointer/Pointer";
 
 const MainNavigation = ({ menu }: IMainNavigation) => {
 	return (
@@ -17,7 +16,6 @@ const MainNavigation = ({ menu }: IMainNavigation) => {
 					);
 				})}
 			</ul>
-			{/* <Pointer text="HIRE ME!" size="small" /> //Turned off because it's just not looking right. Custom SVG pointing to what i want */}
 		</nav>
 	);
 };

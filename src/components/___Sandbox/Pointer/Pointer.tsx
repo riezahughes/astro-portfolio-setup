@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import type { IPointer } from "./types";
 import Styles from "./styles.module.css";
-import { reverseText } from "../../utils";
+import { reverseText } from "../../../utils";
 
 // experiment while playing around with SVG's
 

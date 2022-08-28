@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import useInterval from "../../hooks/useInterval/useInterval";
+import useInterval from "../../../hooks/useInterval/useInterval";
 import type { IWebsiteTagline } from "./types";
 import Styles from "./styles.module.css";
 
