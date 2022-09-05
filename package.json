@@ -61,6 +61,7 @@
   "dependencies": {
     "eslint-plugin-react-hooks": "^4.6.0",
     "preact": "^10.5.14",
-    "preact-render-to-string": "^5.1.19"
+    "preact-render-to-string": "^5.1.19",
+    "react-icons": "^4.4.0"
   }
 }
