@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+	"compilerOptions": {
 		// Enable top-level await, and other modern ESM features.
 		"target": "ESNext",
 		"module": "ESNext",
@@ -17,6 +17,11 @@
 		"importsNotUsedAsValues": "error",
 		"allowSyntheticDefaultImports": true,
 		"jsx": "react-jsx",
-		"plugins": [{ "name": "typescript-plugin-css-modules" }]
+		"plugins": [{ "name": "typescript-plugin-css-modules" }],
+		"baseUrl": ".",
+		"paths": {
+			"@components": ["src/components/"],
+			"@assets/*": ["src/assets/*"]
+		}
 	}
 }

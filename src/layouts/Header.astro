@@ -1,14 +1,22 @@
 ---
-import MainNavigation from "../components/MainNavigation/MainNavigation";
+import { MainNavigation, ProfileIcon } from "@components";
+import { AiFillLinkedin, AiFillGithub, AiFillHeart } from "react-icons/ai";
+const menu = [
+			{ url: "#", label: "Home" },
+			{ url: "#articles", label: "Articles" },
+			{ url: "#about", label: "About" },
+			{ url: "#csv", label: "CSV" },
+			{ url: "#contact", label: "Contact" }
+		]
 ---
 <div>
-
-    <MainNavigation	menu={[
-						{ url: "#", label: "Home" },
-						{ url: "#articles", label: "Articles" },
-						{ url: "#about", label: "About" },
-						{ url: "#csv", label: "CSV" },
-						{ url: "#contact", label: "Contact" }
-					]}/>
+	<MainNavigation
+		menu={menu}
+	/>
+	<nav id="media-accounts">
+		<ProfileIcon icon={AiFillLinkedin} url="https://www.linkedin.com/in/dan-ruxton"/>
+		<ProfileIcon icon={AiFillGithub} url="https://github.com/riezahughes"/>
+		<ProfileIcon icon={AiFillHeart} url="https://github.com/riezahughes"/>
+	</nav>
 </div>
-
+ 

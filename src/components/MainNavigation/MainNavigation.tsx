@@ -6,9 +6,9 @@ const MainNavigation = ({ menu }: IMainNavigation) => {
 	return (
 		<nav id="mainHeaderNavigation">
 			<ul className={Styles.mainNavLinkContainer}>
-				{menu.map((item) => {
+				{menu.map((item, index) => {
 					return (
-						<li>
+						<li key={`mainNav-${index}`}>
 							<a className={Styles.mainNavLink} href={item.url}>
 								{item.label}
 							</a>

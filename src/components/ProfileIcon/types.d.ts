@@ -1,4 +1,4 @@
 export interface IProfileIcon {
-	icon: JSX.Element;
+	icon: any;
 	url: string;
 }
