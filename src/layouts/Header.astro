@@ -1,6 +1,8 @@
 ---
-import { MainNavigation, ProfileIcon } from "@components";
+import { MainNavigation, ProfileIcon, Logo } from "@components";
 import { AiFillLinkedin, AiFillGithub, AiFillHeart } from "react-icons/ai";
+import { Image } from '@astrojs/image/components';
+import tavernLogo from "@public/images/logo.svg"
 const menu = [
 			{ url: "#", label: "Home" },
 			{ url: "#articles", label: "Articles" },
@@ -9,14 +11,32 @@ const menu = [
 			{ url: "#contact", label: "Contact" }
 		]
 ---
-<div>
-	<MainNavigation
-		menu={menu}
-	/>
-	<nav id="media-accounts">
+<header id="site-header">
+
+
+	<nav id="main-header-navigation">
+		<Logo fillColour="#FFFFFF"/>		
+		<MainNavigation
+			menu={menu}
+		/>
+	</nav>
+	<!-- <nav id="media-accounts">
 		<ProfileIcon title="linkedin" Icon={AiFillLinkedin} url="https://www.linkedin.com/in/dan-ruxton"/>
 		<ProfileIcon title="github" Icon={AiFillGithub} url="https://github.com/riezahughes"/>
 		<ProfileIcon title="heart" Icon={AiFillHeart} url="https://github.com/riezahughes"/>
-	</nav>
-</div>
+	</nav> -->
+</header>
  
+<style>
+
+	#site-header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#main-header-navigation{
+		display: flex;
+	}
+
+</style>
