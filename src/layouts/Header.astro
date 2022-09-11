@@ -1,42 +1,44 @@
 ---
-import { MainNavigation, ProfileIcon, Logo, GenericButton } from "@components";
+import { MainNavigation, ProfileIcon, Logo, GenericButton, GenericSiteContainer } from "@components";
 import { AiFillLinkedin, AiFillGithub, AiFillHeart } from "react-icons/ai";
-import { Image } from '@astrojs/image/components';
-import tavernLogo from "@public/images/logo.svg"
+import { Image } from "@astrojs/image/components";
+import tavernLogo from "@public/images/logo.svg";
 const menu = [
-			{ url: "#About", label: "About" },	
-			{ url: "#Download", label: "Download" },
-			{ url: "#Support", label: "Support" },
-		]
+	{ url: "#About", label: "About" },
+	{ url: "#Download", label: "Download" },
+	{ url: "#Support", label: "Support" }
+];
 ---
+
 <header id="site-header">
-
-
 	<nav id="main-header-navigation">
-		<Logo fillColour="#FFFFFF"/>
-		<MainNavigation
-			menu={menu}
-		/>
+		<Logo fillColour="#FFFFFF" />
+		<MainNavigation menu={menu} />
 	</nav>
 	<nav id="main-header-buttons">
-		<GenericButton text="Login" style={{backgroundColor: "#ffffff"}}/>
+		<GenericButton text="Login" style={{ backgroundColor: "#ffffff" }} />
 	</nav>
 	<!-- <nav id="media-accounts">
-		<ProfileIcon title="linkedin" Icon={AiFillLinkedin} url="https://www.linkedin.com/in/dan-ruxton"/>
-		<ProfileIcon title="github" Icon={AiFillGithub} url="https://github.com/riezahughes"/>
-		<ProfileIcon title="heart" Icon={AiFillHeart} url="https://github.com/riezahughes"/>
-	</nav> -->
+			<ProfileIcon title="linkedin" Icon={AiFillLinkedin} url="https://www.linkedin.com/in/dan-ruxton"/>
+			<ProfileIcon title="github" Icon={AiFillGithub} url="https://github.com/riezahughes"/>
+			<ProfileIcon title="heart" Icon={AiFillHeart} url="https://github.com/riezahughes"/>
+		</nav> -->
 </header>
- 
 <style>
-	#site-header{
+	#site-header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-	}
+		position: fixed;
+		width: 100%;
+		height: auto;
+background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(40,40,40,0.5) 75%, rgba(73,73,73,0) 100%);
+}
 
-	#main-header-navigation{
+	#main-header-navigation,
+	#main-header-buttons {
 		display: flex;
+		padding: 0.5rem;
 	}
-
 </style>
