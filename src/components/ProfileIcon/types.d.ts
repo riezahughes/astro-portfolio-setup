@@ -1,4 +1,5 @@
 export interface IProfileIcon {
-	icon: any;
+	Icon: any;
 	url: string;
+	title: string;
 }
