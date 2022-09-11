@@ -1,24 +1,25 @@
 ---
-import { MainNavigation, ProfileIcon, Logo } from "@components";
+import { MainNavigation, ProfileIcon, Logo, GenericButton } from "@components";
 import { AiFillLinkedin, AiFillGithub, AiFillHeart } from "react-icons/ai";
 import { Image } from '@astrojs/image/components';
 import tavernLogo from "@public/images/logo.svg"
 const menu = [
-			{ url: "#", label: "Home" },
-			{ url: "#articles", label: "Articles" },
-			{ url: "#about", label: "About" },
-			{ url: "#csv", label: "CSV" },
-			{ url: "#contact", label: "Contact" }
+			{ url: "#About", label: "About" },	
+			{ url: "#Download", label: "Download" },
+			{ url: "#Support", label: "Support" },
 		]
 ---
 <header id="site-header">
 
 
 	<nav id="main-header-navigation">
-		<Logo fillColour="#FFFFFF"/>		
+		<Logo fillColour="#FFFFFF"/>
 		<MainNavigation
 			menu={menu}
 		/>
+	</nav>
+	<nav id="main-header-buttons">
+		<GenericButton text="Login" style={{backgroundColor: "#ffffff"}}/>
 	</nav>
 	<!-- <nav id="media-accounts">
 		<ProfileIcon title="linkedin" Icon={AiFillLinkedin} url="https://www.linkedin.com/in/dan-ruxton"/>
@@ -28,7 +29,6 @@ const menu = [
 </header>
  
 <style>
-
 	#site-header{
 		display: flex;
 		justify-content: space-between;
