@@ -1,14 +1,16 @@
-# New Astro Portfolio
+# New Astro Project
 
-Test at a new portfolio site using just ASTRO and a few tools i've learned. This directory will be a template for anything i might want to work on in the future. If anyone wants to ask about anything, feel free. I'll be having fun switching from Gatsby to something that's much more dynamic in tooling.
+Originally supposed to be a portfolio site, i've decided to use this as a bigger project to show my abilities at problem solving, thinking outside the box and practical capabilities.
 
 A few key features this website will have:
 
 - The ability to deploy using a headerless CMS.
 - Entire site's html and css will be under 1MB in size (to show an "edge" example.)
-- The entire frontend needs to be less black and white.
-- The CV page really needs to make my skills stand out.
-- Some page animations in places.
+- The entire frontend Will be generated using Astro and React Components.
+- This entire site will lead to a seperate repo for the actual application.
+- The ability to quickly scaffold files and folders as needed
+- Full Story capabilities so if needed you can look over each individual component
+- and lots, lots more.
 
 A few key features of this repo:
 
@@ -17,10 +19,12 @@ A few key features of this repo:
 - github action runners for all tests
 - eslint and prettier support
 - [vitebook](https://vitebook.dev/) added to the project to try out something that's lighter/different than storybook.
+- Astro (a given)
+- Template Generator (Ironically, templated atm)
+- PM2 capabilities for running both vitebook and the astro project in a single command. (To be done)
 
-There'll be more than just this. For example, a plan to build using emotion and storybook is one of the big things i want to do. For now i'll keep the list simple.
 
-Whether i manage to get to this point or not is a different story. But it's all about the fun of playing with new toys for me. Wish me luck!
+I'm hoping to push this into a genuine legitimate looking project page, so i can focus on the application itself.
 
 --------------astro default garbage i'll be keeping here for now.
 

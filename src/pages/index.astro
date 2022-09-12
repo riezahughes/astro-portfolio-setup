@@ -1,16 +1,39 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import { GenericWebBanner, GenericTestimonials } from "@components"
+import backgroundImage from "@public/images/homepage.jpg"
+const content = [
+	{
+		title: "Title 1",
+		message: "Message 1 is a short message"
+	},
+	{
+		title: "Title 2",
+		message: "Message 2 is tiny"
+	},
+	{
+		title: "Title 3",
+		message: "Message 3 is a reasonable message that goes on for a little bit."
+	},
+	{
+		title: "Title 4",
+		message: "Message 4 is a few short messages. Here they'd probably want to state how proud they are that it works. And what fun can happen in the application"
+	},
+	{
+		title: "Title 5",
+		message: "Mesage is very fucking long. Like holy shit. This absolute long boi can hold so many characters. Who knows how long it'll go on for. And over and over and over And over and over and over And over and over and over And over and over and over"
+	}			
+]
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<!-- Main index layout will go here. -->
-		<h1>content</h1>
+<Layout title="Tavern | Party up, make friends & roll dice">
+	<GenericWebBanner backgroundImage={backgroundImage}/>
+	<main id="main-content">
+		<GenericTestimonials client:idle content={content} />
 	</main>
 </Layout>
 <style>
-	main{
-		width: 100%;
+	#main-content{
+		padding: 0.5rem;
 	}
 </style>

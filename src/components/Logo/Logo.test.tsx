@@ -5,7 +5,7 @@ import { AiFillFacebook, AiFillHeart } from "react-icons/ai";
 
 describe("Using module: Logo", () => {
 	it("Can see the icon appear", () => {
-		const { getByText } = render(<Logo fillColour="#ffffff" />);
+		const { getByText } = render(<Logo url="#" fillColour="#ffffff" />);
 		expect(getByText("Tavern Logo")).toBeInTheDocument();
 	});
 });
